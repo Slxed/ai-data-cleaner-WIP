@@ -8,7 +8,7 @@ A Python pipeline that cleans messy public data and, in the next step, uses an L
 
 ## Why I built this
 
-I wanted more experience building data cleaning pipelines, similar to the work I was doing before at my past internship. I wanted to replicate that process with a bit of AI and then feed the result into an LLM for a cleaning report.
+I wanted more experience building data cleaning pipelines, similar to the work I was doing before at my past internship. I wanted to replicate that process with a bit of AI and then feed the result into an LLM for a cleaning report. Note that I did use an LLM to generate code in this project.
 
 ## Data
 NYC 311 Service Requests (NYC Open Data), about 316,000 rows and 44 columns. The raw file isn't in this repo because of its size.
