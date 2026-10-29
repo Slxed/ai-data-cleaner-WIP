@@ -17,9 +17,9 @@ NYC 311 Service Requests (NYC Open Data), about 316,000 rows and 44 columns. The
 1. `explore.py` shows the shape, column types, missing values, and duplicates.
 2. `clean.py` runs four steps and logs what each one removes:
    - drops columns that are 95% or more empty
-   - standardizes text and turns placeholders like "N/A" and "Unspecified" into missing values
+   - standardizes text and turns 'No Data' placeholders like "N/A" and "Unspecified" into missing values
    - converts dates, fixes ZIP codes, and adds a `resolution_hours` column
-   - drops duplicates and rows with no coordinates
+   - drops duplicates and rows without coordinates
 
 Put the raw CSV in `raw data/` first and update the path in `clean.py`.
 
@@ -28,4 +28,4 @@ Python, pandas, NumPy, Matplotlib
 
 ## Next steps
 - AI layer: send the cleaning log to an LLM for a data quality report
-- Plain-English questions turned into read-only queries, with checks
+- Plain-English questions turned into queries via LLM.
