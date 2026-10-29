@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# I think this prevents massive uploads to the repo maybe I hope
+raw data/
+clean data/
