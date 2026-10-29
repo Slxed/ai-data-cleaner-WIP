@@ -1,8 +1,4 @@
-# ai-data-cleaner-WIP
-Work in progress*** ai-data-cleaner
-
-
-# AI Data Cleaner
+# AI Data Cleaner (WIP)
 
 A Python pipeline that cleans a particular NY dataset and, in the next step, uses an LLM to write a plain-English data quality report which can also be queried for different questions relating to the cleaned data.
 
