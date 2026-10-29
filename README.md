@@ -4,7 +4,7 @@ Work in progress*** ai-data-cleaner
 
 # AI Data Cleaner
 
-A Python pipeline that cleans a particular NY dataset and, in the next step, uses an LLM to write a plain-English data quality report, which can also be queried for different questions relating to the cleaned data.
+A Python pipeline that cleans a particular NY dataset and, in the next step, uses an LLM to write a plain-English data quality report which can also be queried for different questions relating to the cleaned data.
 
 ## Why I built this
 
