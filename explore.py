@@ -1,5 +1,8 @@
 import pandas as pd
-df = pd.read_csv("raw data/example_data.csv")
+
+from config import RAW_CSV
+
+df = pd.read_csv(RAW_CSV, low_memory=False)
 print(df.shape)
 df.info()
 print(df.isna().sum())

@@ -1,0 +1,19 @@
+NYC Open Data
+Dataset: 311 Service Requests from 2020 to Present
+Dataset page: https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9
+API id: erm2-nwe9
+Pulled: 2026-11-20
+
+This file is 3,000 real rows from the SODA API, not a made-up table.
+Three requests, 1,000 rows each:
+
+  https://data.cityofnewyork.us/resource/erm2-nwe9.csv
+  $order=created_date DESC
+  $limit=1000
+  $offset=0, then 1000, then 2000
+  $select=unique_key,created_date,closed_date,agency,agency_name,complaint_type,descriptor,descriptor_2,location_type,incident_zip,incident_address,street_name,cross_street_1,cross_street_2,intersection_street_1,intersection_street_2,address_type,city,landmark,facility_type,status,due_date,resolution_description,resolution_action_updated_date,community_board,council_district,police_precinct,bbl,borough,x_coordinate_state_plane,y_coordinate_state_plane,open_data_channel_type,park_facility_name,park_borough,vehicle_type,taxi_company_borough,taxi_pick_up_location,bridge_highway_name,bridge_highway_direction,road_ramp,bridge_highway_segment,latitude,longitude,location
+
+The four :@computed_region fields were left out. They are API helpers, not part of the 44-column dataset.
+Headers in nyc311_sample.csv were renamed from those API field names to the dataset display names (the names on the Open Data CSV export). Cell values were not edited.
+
+Created Date in this extract runs from 2026-11-18T18:10:42.000 through 2026-11-19T02:06:04.000.
